@@ -16,7 +16,7 @@ class Post(models.Model):
     updated_date = models.DateTimeField(auto_now=True)
 
     class Meta:
-        ordering = ['-created_date']
+        ordering = ['created_date']
        # verbose_name = 'اقا سپهر'
         #verbose_name_plural = 'اقا سپهر'
 

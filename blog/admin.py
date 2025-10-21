@@ -6,7 +6,7 @@ from blog.models import Post
 class PostAdmin(admin.ModelAdmin):
     date_hierarchy = 'created_date'
     emty_value_display = '-emty-'
-    fields = ('title' ,)
+    #fields = ('title' ,)
     list_display = ('title' , 'counted_views' , 'status' , 'published_date' , 'created_date')
     list_filter = ('status' ,)
     #ordering = ['-created_date']
